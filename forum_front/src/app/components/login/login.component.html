@@ -1,0 +1,24 @@
+<div class="holder">
+  <div class="form-holder">
+  <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <div class="imgcontainer">
+      <img src="https://thumbs.dreamstime.com/b/black-solid-icon-employee-applicant-man-logo-symbol-146530494.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required [(ngModel)]="username">
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required [(ngModel)]="password">
+
+      <button [disabled]="!f.valid" type="submit">Log in</button>
+    </div>
+  </form>
+    <div class="write-container">
+
+      <label class="button-text"><b>Don't have account?</b></label>
+      <button (click)="onRegister()">Register</button>
+    </div>
+  </div>
+</div>

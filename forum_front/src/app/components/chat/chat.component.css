@@ -1,0 +1,104 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.container{
+  margin: 50px auto auto;
+  width: 900px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  background-color: aquamarine;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+.top{
+  display: flex;
+  justify-content: center;
+}
+.top h3{
+  color: white;
+  padding: 15px;
+
+}
+.base{
+  flex: 1;
+  color: white;
+  background-color: cadetblue;
+  padding: 20px 30px;
+  overflow: auto;
+}
+
+.limited-text{
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  word-break: break-word;
+
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+.in{
+  padding: 10px;
+  width: fit-content;
+  max-width: 80%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  margin-left: auto;
+}
+.out{
+  padding: 10px;
+  width: fit-content;
+  max-width: 80%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.cloud{
+  background-color: aquamarine;
+  padding: 10px;
+  color: white;
+  width: fit-content;
+  max-width: 80%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.our-cloud{
+  margin-left: auto;
+  background-color: white;
+  color: black;
+}
+.bottom{
+  display: flex;
+}
+.bottom input{
+  flex: 1;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding-left: 5px;
+  border-bottom-left-radius: 10px;
+}
+.bottom button{
+  width: 100px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: aquamarine;
+  color: white;
+  cursor: pointer;
+  border-bottom-right-radius: 10px;
+}
+.bottom button:hover{
+  background-color: rgb(127, 220, 220);
+  transition: 0.5s ease;
+}
+.current-user{
+  margin-left: auto;
+  text-align: right;
+}

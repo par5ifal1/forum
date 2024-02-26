@@ -1,0 +1,26 @@
+<div>
+  <div class="holder">
+    <div class="outer-container">
+      <form (ngSubmit)="addTopic(f)" #f="ngForm">
+
+        <div class="container">
+          <label><b>Label</b></label>
+          <input type="text" placeholder="Enter Label" name="uname" required [(ngModel)]="label">
+
+          <label><b>Description</b></label>
+          <input type="text" placeholder="Enter Description" name="psw" required [(ngModel)]="description">
+
+          <button [disabled]="!f.valid" type="submit">Add Topic</button>
+        </div>
+      </form>
+      <div class="outer-topics">
+        <div *ngFor="let topic of topics" class="topic-holder">
+            <p class="topic-text">{{topic.label}}</p>
+            <a routerLink="/topic/{{topic.id}}" class="link-text"><div class="emit-button">
+              <p>Go to topic</p>
+            </div></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

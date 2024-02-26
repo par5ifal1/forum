@@ -1,0 +1,11 @@
+<app-navbar class="header" [className]="displayLoadingScreen? 'blur': ''"></app-navbar>
+<div [className]="displayLoadingScreen? 'blur':''">
+  <router-outlet></router-outlet>
+</div>
+<div *ngIf="displayLoadingScreen" id="loading">
+  <div id="inner-loading">
+    <div id="inner-inner-loading">
+
+    </div>
+  </div>
+</div>

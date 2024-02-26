@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="top">
+    <h3>Chat</h3>
+  </div>
+  <div class="base">
+    <div *ngFor="let message of msg">
+      <div [className]="message.user.id ==  user.id? 'in' : 'out'">
+        <div [className]="message.user.id ==  user.id? 'our-cloud cloud' : 'cloud'">
+          <p>{{message.user.username}}</p>
+          <br/>
+          <p class="limited-text">{{message.text}}</p>
+        </div>
+          <p [className]="message.user.id ==  user.id? 'current-user' : ''">{{message.date}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="bottom">
+    <input type="text" id="chat-input" placeholder="Send a message..." [(ngModel)]="input">
+    <button type="submit" (click)="sendMessage()">SEND</button>
+  </div>
+</div>

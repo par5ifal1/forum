@@ -1,0 +1,18 @@
+<div>
+  <div class="holder">
+    <h1>{{topic.label}}</h1>
+    <p>{{topic.description}}</p>
+    <hr/>
+    <div class="base">
+      <div *ngFor="let comment of topic.comments" class="cloud">
+        <p>{{comment.user.username}}</p>
+        <p class="limited-text">{{comment.text}}</p>
+        <p>{{comment.date}}</p>
+      </div>
+    </div>
+    <div class="bottom">
+      <input type="text" id="chat-input" placeholder="Send a message..." [(ngModel)]="input">
+      <button type="submit" (click)="addComment()">SEND</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,85 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.holder{
+  padding: 16px;
+}
+
+hr {
+  margin-top: 16px;
+  border: none;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), aquamarine, rgba(0, 0, 0, 0));
+}
+
+h1{
+  padding: 16px;
+  text-align: center;
+
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  word-break: break-word;
+
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+.base{
+  flex: 1;
+  padding: 20px 30px;
+  overflow: auto;
+}
+
+.limited-text{
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  word-break: break-word;
+
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+.cloud{
+  padding: 10px;
+  width: fit-content;
+  max-width: 80%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.bottom{
+  display: flex;
+}
+.bottom input{
+  flex: 1;
+  height: 40px;
+  outline: none;
+  padding-left: 5px;
+  border: 1px solid lightgray;
+  border-right: none;
+}
+.bottom button{
+  width: 100px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: aquamarine;
+  color: white;
+  cursor: pointer;
+}
+.bottom button:hover{
+  background-color: rgb(127, 220, 220);
+  transition: 0.5s ease;
+}
